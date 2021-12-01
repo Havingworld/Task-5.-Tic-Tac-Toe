@@ -135,21 +135,7 @@ string LineToAnswer(string szLine0, string szLine1, string szLine2) {
         return "X won!";
     } 
   // if (X<O)
-    else if (nCountX == nCountO &&
-        (ch02 + ch12 + ch22 == 79 * 3
-        || ch01 + ch11 + ch21 == 79 * 3
-        || ch00 + ch10 + ch20 == 79 * 3
-        || ch00 + ch11 + ch22 == 79 * 3
-        || ch20 + ch11 + ch02 == 79 * 3
-        || ch20 + ch21 + ch22 == 79 * 3
-        || ch10 + ch11 + ch12 == 79 * 3
-        || ch00 + ch01 + ch22 == 79 * 3
-        )
-        )
-    {
-        return "O won!";
-    }
-    else if (
+        else if (
            (nCountX == nCountO &&
            (ch02 + ch12 + ch22 == 88 * 3
          || ch01 + ch11 + ch21 == 88 * 3
@@ -163,7 +149,21 @@ string LineToAnswer(string szLine0, string szLine1, string szLine2) {
             {
                 return "Incorrect input";
              }
-    else {
+        else if (nCountX == nCountO &&
+            (ch02 + ch12 + ch22 == 79 * 3
+                || ch01 + ch11 + ch21 == 79 * 3
+                || ch00 + ch10 + ch20 == 79 * 3
+                || ch00 + ch11 + ch22 == 79 * 3
+                || ch20 + ch11 + ch02 == 79 * 3
+                || ch20 + ch21 + ch22 == 79 * 3
+                || ch10 + ch11 + ch12 == 79 * 3
+                || ch00 + ch01 + ch22 == 79 * 3
+                )
+            )
+    {
+        return "O won!";
+    }
+        else {
         return "nobody";
     }
 }
