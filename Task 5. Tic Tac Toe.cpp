@@ -128,7 +128,7 @@ string LineToAnswer(string szLine0, string szLine1, string szLine2) {
         ||ch20 + ch11 + ch02 == 88*3
         ||ch20 + ch21 + ch22 == 88*3
         ||ch10 + ch11 + ch12 == 88*3
-        ||ch00 + ch01 + ch22 == 88*3
+        ||ch00 + ch01 + ch02 == 88*3
             )
         )
     {
@@ -144,7 +144,7 @@ string LineToAnswer(string szLine0, string szLine1, string szLine2) {
          || ch20 + ch11 + ch02 == 88 * 3
          || ch20 + ch21 + ch22 == 88 * 3
          || ch10 + ch11 + ch12 == 88 * 3
-         || ch00 + ch01 + ch22 == 88 * 3))
+         || ch00 + ch01 + ch02 == 88 * 3))
          || nCountX < nCountO)
             {
                 return "Incorrect input";
@@ -157,7 +157,7 @@ string LineToAnswer(string szLine0, string szLine1, string szLine2) {
                 || ch20 + ch11 + ch02 == 79 * 3
                 || ch20 + ch21 + ch22 == 79 * 3
                 || ch10 + ch11 + ch12 == 79 * 3
-                || ch00 + ch01 + ch22 == 79 * 3
+                || ch00 + ch01 + ch02 == 79 * 3
                 )
             )
     {
